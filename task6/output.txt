@@ -1,0 +1,1 @@
+{"domain":"flaskapp-np","endpoint":"/check-ingress","full_path:":"flaskapp-np/check-ingress"}

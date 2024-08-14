@@ -1,0 +1,3 @@
+NAME       READY   UP-TO-DATE   AVAILABLE   AGE
+flaskapp   1/1     1            1           99s
+{"env":"staging","http_port":"80","string":"Welcome to DevOps Course!"}

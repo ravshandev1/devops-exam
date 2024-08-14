@@ -1,0 +1,11 @@
+
+NAME                            READY   STATUS    RESTARTS   AGE
+flaskapp-668649cb4d-kjlml       1/1     Running   0          69m
+frontend-app-58454f5cb9-5sk5n   1/1     Running   0          41m
+nginx1                          1/1     Running   0          74m
+nginx2                          1/1     Running   0          74m
+repo-2-7dcf8b4dc-pmxgc          1/1     Running   0          50s
+NAME           READY   UP-TO-DATE   AVAILABLE   AGE
+flaskapp       1/1     1            1           69m
+frontend-app   1/1     1            1           41m
+repo-2         1/1     1            1           6m54s

@@ -1,0 +1,4 @@
+k create deployment flaskapp --image nvrbckdown/flask-app:v1 -n exam-ravshan
+k port-forward deployments/flaskapp -n exam-ravshan 5000:5000
+curl localhost:5000
+k create deployment flaskapp --image nvrbckdown/flask-app:v1 -n exam-ravshan --dry-run=client -o yaml >> task4/flaskapp-dp.yaml

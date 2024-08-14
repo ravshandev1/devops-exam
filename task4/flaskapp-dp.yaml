@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flaskapp
+  name: flaskapp
+  namespace: exam-ravshan
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flaskapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: flaskapp
+    spec:
+      containers:
+      - image: nvrbckdown/flask-app:v1
+        name: flask-app
+        resources: {}
+status: {}

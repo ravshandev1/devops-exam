@@ -1,0 +1,2 @@
+k create deployment repo-2 --image dockeriohub/repo-2:v1 -n exam-ravshan --dry-run=client -o yaml >> task12/repo-2.yaml
+k create -f task12/repo-2.yaml -n exam-ravshan

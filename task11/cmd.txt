@@ -1,0 +1,2 @@
+k create secret generic database -n exam-ravshan --from-literal DB_URI=postgres://admin:supersecret@10.10.10.1:5432/exam-db
+kgsec -n exam-ravshan

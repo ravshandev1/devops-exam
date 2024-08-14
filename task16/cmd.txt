@@ -1,0 +1,1 @@
+k get endpoints repo-2-svc -n exam-ravshan

@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: repo-2
+  name: repo-2
+  namespace: exam-ravshan
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: repo-2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: repo-2
+    spec:
+      containers:
+      - image: dockeriohub/repo-2:v1
+        name: repo-2
+        env:
+          - name: ENVIRONMENT
+            valueFrom:
+              configMapKeyRef:
+                name: info
+                key: env
+          - name: LOG_LEVEL
+            valueFrom:
+              configMapKeyRef:
+                name: info
+                key: log_leveI
+          - name: GRPC_PORT
+            valueFrom:
+              configMapKeyRef:
+                name: info
+                key: grpc_port
+          - name: POD_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
+        resources: {}
+status: {}

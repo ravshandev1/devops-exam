@@ -1,0 +1,4 @@
+NAME              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+flaskapp-np       NodePort    10.233.47.11   <none>        80:30566/TCP   65m
+frontend-app-np   NodePort    10.233.1.219   <none>        80:31330/TCP   38m
+repo-2-svc        ClusterIP   10.233.29.43   <none>        80/TCP         81s

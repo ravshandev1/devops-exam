@@ -1,0 +1,1 @@
+k apply -f task19/repo-2.yaml

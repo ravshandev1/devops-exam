@@ -1,0 +1,1 @@
+k create ing repo-2-ing --rule "k.ravshavdev.uz/*=repo-2-svc:80" --class nginx -n exam-ravshan

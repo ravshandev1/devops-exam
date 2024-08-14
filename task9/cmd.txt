@@ -1,0 +1,2 @@
+k expose deployment frontend-app --port 80 --target-port 80 --name frontend-app-np --type NodePort -n exam-ravshan
+curl 65.109.137.203:31330

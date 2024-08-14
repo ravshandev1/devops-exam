@@ -1,0 +1,52 @@
+Name:                   repo-2
+Namespace:              exam-ravshan
+CreationTimestamp:      Wed, 14 Aug 2024 22:32:31 +0500
+Labels:                 app=repo-2
+Annotations:            deployment.kubernetes.io/revision: 2
+Selector:               app=repo-2
+Replicas:               3 desired | 3 updated | 3 total | 3 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=repo-2
+  Containers:
+   repo-2:
+    Image:      dockeriohub/repo-2:v1
+    Port:       <none>
+    Host Port:  <none>
+    Limits:
+      cpu:     200m
+      memory:  128Mi
+    Requests:
+      cpu:     100m
+      memory:  64Mi
+    Liveness:  http-get http://:80/healthz delay=30s timeout=1s period=10s #success=1 #failure=3
+    Environment:
+      ENVIRONMENT:  <set to the key 'env' of config map 'info'>        Optional: false
+      LOG_LEVEL:    <set to the key 'log_leveI' of config map 'info'>  Optional: false
+      GRPC_PORT:    <set to the key 'grpc_port' of config map 'info'>  Optional: false
+      POD_IP:        (v1:status.podIP)
+      CPU:          1 (requests.cpu)
+      MEMORY:       67108864 (requests.memory)
+    Mounts:         <none>
+  Volumes:          <none>
+  Node-Selectors:   <none>
+  Tolerations:      <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  repo-2-56fb8ddbc6 (0/0 replicas created)
+NewReplicaSet:   repo-2-85f6545f79 (3/3 replicas created)
+Events:
+  Type    Reason             Age    From                   Message
+  ----    ------             ----   ----                   -------
+  Normal  ScalingReplicaSet  17m    deployment-controller  Scaled up replica set repo-2-56fb8ddbc6 to 3
+  Normal  ScalingReplicaSet  3m3s   deployment-controller  Scaled up replica set repo-2-85f6545f79 to 1
+  Normal  ScalingReplicaSet  3m1s   deployment-controller  Scaled down replica set repo-2-56fb8ddbc6 to 2 from 3
+  Normal  ScalingReplicaSet  3m1s   deployment-controller  Scaled up replica set repo-2-85f6545f79 to 2 from 1
+  Normal  ScalingReplicaSet  2m59s  deployment-controller  Scaled down replica set repo-2-56fb8ddbc6 to 1 from 2
+  Normal  ScalingReplicaSet  2m59s  deployment-controller  Scaled up replica set repo-2-85f6545f79 to 3 from 2
+  Normal  ScalingReplicaSet  2m57s  deployment-controller  Scaled down replica set repo-2-56fb8ddbc6 to 0 from 1

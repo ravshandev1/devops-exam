@@ -1,0 +1,4 @@
+k run nginx1 --image nginx -n exam-ravshan --dry-run=client -o yaml > task2/nginx1.yaml
+k run nginx2 --image nginx -n exam-ravshan --dry-run=client -o yaml > task2/nginx2.yaml
+k create -f task2/nginx1.yaml
+k create -f task2/nginx2.yaml

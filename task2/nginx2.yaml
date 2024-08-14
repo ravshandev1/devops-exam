@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx2
+    author: RAVSHAN
+    project: practice
+  name: nginx2
+  namespace: exam-ravshan
+spec:
+  containers:
+  - image: nginx
+    name: nginx2
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

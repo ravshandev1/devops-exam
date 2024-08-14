@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  annotations:
+    endpoints.kubernetes.io/last-change-trigger-time: "2024-08-14T16:21:00Z"
+  creationTimestamp: "2024-08-14T16:05:13Z"
+  labels:
+    app: repo-2
+  name: repo-2-svc
+  namespace: exam-ravshan
+  resourceVersion: "7034444"
+  uid: 93a1752b-f821-47ed-b2e1-55bfeb0e3e03
+subsets:
+- addresses:
+  - ip: 10.233.71.22
+    nodeName: node3
+    targetRef:
+      kind: Pod
+      name: repo-2-7dcf8b4dc-tvvwl
+      namespace: exam-ravshan
+      uid: 474e4348-b7bb-4924-9aaa-3f63d061b9cb
+  - ip: 10.233.75.53
+    nodeName: node2
+    targetRef:
+      kind: Pod
+      name: repo-2-7dcf8b4dc-x6k7v
+      namespace: exam-ravshan
+      uid: cd4480f2-7434-4774-b916-2e91cc2bcaf6
+  - ip: 10.233.97.177
+    nodeName: node5
+    targetRef:
+      kind: Pod
+      name: repo-2-7dcf8b4dc-4fzq8
+      namespace: exam-ravshan
+      uid: b143462c-e3bb-428e-b6fc-b2248b21f84c
+  ports:
+  - port: 80
+    protocol: TCP

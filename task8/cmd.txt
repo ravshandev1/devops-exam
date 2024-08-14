@@ -1,0 +1,2 @@
+k create -f repo-2/task/frontend-app.yaml -n exam-ravshan
+kgp -n exam-ravshan

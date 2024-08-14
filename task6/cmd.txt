@@ -1,0 +1,1 @@
+k exec -it nginx1 -n exam-ravshan -- curl flaskapp-np/check-ingress

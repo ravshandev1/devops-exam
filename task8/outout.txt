@@ -1,0 +1,5 @@
+NAME                            READY   STATUS    RESTARTS   AGE
+flaskapp-668649cb4d-kjlml       1/1     Running   0          29m
+frontend-app-58454f5cb9-5sk5n   1/1     Running   0          82s
+nginx1                          1/1     Running   0          34m
+nginx2                          1/1     Running   0          34m

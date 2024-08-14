@@ -1,0 +1,3 @@
+NAME          TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+flaskapp-np   NodePort   10.233.47.11   <none>        80:30566/TCP   80s
+{"env":"staging","http_port":"80","string":"Welcome to DevOps Course!"}

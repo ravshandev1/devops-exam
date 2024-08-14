@@ -1,0 +1,5 @@
+
+NAME              TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+flaskapp-np       NodePort   10.233.47.11   <none>        80:30566/TCP   26m
+frontend-app-np   NodePort   10.233.1.219   <none>        80:31330/TCP   3s
+{"message":"Welcome to your Kubernetes Exam!"}

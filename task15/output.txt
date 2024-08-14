@@ -1,0 +1,4 @@
+NAME           READY   UP-TO-DATE   AVAILABLE   AGE
+flaskapp       1/1     1            1           87m
+frontend-app   1/1     1            1           59m
+repo-2         3/3     3            3           49s

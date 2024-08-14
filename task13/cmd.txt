@@ -1,0 +1,2 @@
+k expose deployment repo-2 -n exam-ravshan --port 80 --target-port 80 --name repo-2-svc
+kgs -n exam-ravshan
